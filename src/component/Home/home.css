@@ -1,0 +1,14 @@
+@media(max-width:998px){
+  .container{
+   display: flex ;
+   flex-direction: col;
+  
+justify-content: center
+  }
+}
+
+@media(min-width:375px){
+ .my-image{
+   width:15rem;
+ }
+}
