@@ -7,8 +7,11 @@ justify-content: center
   }
 }
 
-@media(min-width:375px){
- .my-image{
-   width:15rem;
- }
+@media (min-width: 375px) and (max-width: 998px) {
+  .my-image {
+      max-width: none; /* Override the max-width property */
+  height: auto; /* Maintain aspect ratio */
+    width: 20rem; /* Adjust the width as needed */
+  }
 }
+

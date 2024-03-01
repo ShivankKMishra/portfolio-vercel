@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import github from "../../assets/images/github-icon.png"
-import codeicon from "../../assets/images/icon-code-0.jpg"
+import github from "@/src/assets/images/github-icon.png"
+import codeicon from "@/src/assets/images/icon-code-0.jpg"
 
 function ProjectsCards(props) {
   return (
