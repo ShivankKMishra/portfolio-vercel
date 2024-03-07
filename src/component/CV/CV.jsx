@@ -28,8 +28,8 @@ export default function CV() {
 
   function onError(error) {
     console.error('Error loading PDF:', error);
-  }
-
+     }
+   
   return (
     <div className='flex justify-center'>
       <Document file="/Resume.pdf" onLoadSuccess={onDocumentLoadSuccess} onLoadError={onError}>
