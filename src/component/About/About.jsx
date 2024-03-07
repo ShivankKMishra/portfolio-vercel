@@ -11,7 +11,7 @@ export default function About() {
           <img className="h-36 mx-10 rounded-full" src={image} alt="Profile Picture" />
         </div>
 
-        <div className="flex flex-wrap m-2">
+        <div className="flex flex-wrap  flex-col md:flex-row px-20 py-1 md:flex-between-360-and-700 items-center m-2">
           <div className="border flex flex-col items-center border-black rounded-3xl p-2 m-2">
             <h1 className="font-bold text-xl">Experience</h1>
             <h2>2+ years</h2>
