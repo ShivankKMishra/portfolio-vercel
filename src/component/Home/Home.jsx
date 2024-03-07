@@ -7,7 +7,7 @@ function Home() {
   return (
     <>
       <div className='mx-20 my-9'>
-        <div className='container flex flex-col-reverse md:flex-row px-20 py-1 md:flex-between-360-and-700 items-center'>
+        <div className='container flex flex-col md:flex-row px-20 py-1 md:flex-between-360-and-700 items-center'>
           <div className='md:mr-10'> {/* Render image on the left side on large screens */}
             <img className='my-image' src={image} alt="Profile Picture" /> {/* Apply the CSS class */}
           </div>
