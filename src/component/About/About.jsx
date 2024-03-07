@@ -42,10 +42,14 @@ export default function About() {
                 <tr className="mb-4">
                   <td className="p-2">HTML</td>
                   <td className="p-2">Javascript</td>
+                  <td className="p-2">React</td>
+                  <td className="p-2">React native </td>
+                  
                 </tr>
                 <tr className="mb-4">
                   <td className="p-2">CSS</td>
                   <td className="p-2">C++</td>
+                  <td className="p-2">three js</td>
                 </tr>
               </tbody>
             </table>
