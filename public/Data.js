@@ -3,7 +3,7 @@ const Data =[
         id:1,
         projectName:"my own keeperapp",
         Linking:"https://my-own-keeperapp.vercel.app/",
-        image:"http://s01.riotpixels.net/data/b4/ef/b4ef9414-de6c-4aab-a40b-f072c955814e.jpg.240p.jpg",
+        image:"/src/assets/images/cardsImage/keeperApp.png",
         githubLink:"https://github.com/ShivankKMishra/myOwnKeeperapp",
 
 
