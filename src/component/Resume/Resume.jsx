@@ -28,15 +28,15 @@ export default function Resume() {
 
   function onError(error) {
     console.error('Error loading PDF:', error);
-     }
+  }
    
   return (
     <div className='flex justify-center'>
-      <Document file="/Resume.pdf" onLoadSuccess={onDocumentLoadSuccess} onLoadError={onError}>
+      <Document file="Resume.pdf" onLoadSuccess={onDocumentLoadSuccess} onLoadError={onError}>
         <Page pageNumber={pageNumber} scale={width > 786 ? 1.7 : 0.6} />
       </Document>
       <p>
-        
+        Page {pageNumber} of {numPages}
       </p>
     </div>
   );
