@@ -7,7 +7,10 @@ function Home() {
   return (
     <>
       <div className='mx-20 my-9'>
-        <div className='container flex flex-col md:flex-row-reverse px-20 py-1 md:flex-col md:flex-between-360-and-700 items-center'>
+        <div className='container flex flex-col-reverse md:flex-row px-20 py-1 md:flex-between-360-and-700 items-center'>
+          <div className='md:mr-10'> {/* Render image on the left side on large screens */}
+            <img className='my-image' src={image} alt="Profile Picture" /> {/* Apply the CSS class */}
+          </div>
           <div>
             <div>
               <h1 className='flex justify-center my-4 text-2xl text-gray-600 font-bold '>Hello, I'm</h1>
@@ -23,7 +26,6 @@ function Home() {
               <button><Link to="https://www.linkedin.com/in/shivank-mishra-0b6a74224/"><img className='h-12' src="https://cdn3.iconfinder.com/data/icons/glypho-social-and-other-logos/64/logo-linkedin-512.png" alt="LinkedIn" /></Link></button>
             </div>
           </div>
-          <img className='my-image md:mr-10 md:order-last' src={image} alt="Profile Picture" /> {/* Apply the CSS class */}
         </div>
       </div>
     </>
