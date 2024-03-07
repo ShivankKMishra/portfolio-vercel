@@ -5,7 +5,7 @@ import 'react-pdf/dist/esm/Page/TextLayer.css'; // Import TextLayer styles
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
-export default function CV() {
+export default function Resume() {
   const [numPages, setNumPages] = useState(null);
   const [pageNumber, setPageNumber] = useState(1);
   const [width, setWidth] = useState(window.innerWidth);
@@ -32,7 +32,7 @@ export default function CV() {
    
   return (
     <div className='flex justify-center'>
-      <Document file="/CV.pdf" onLoadSuccess={onDocumentLoadSuccess} onLoadError={onError}>
+      <Document file="/Resume.pdf" onLoadSuccess={onDocumentLoadSuccess} onLoadError={onError}>
         <Page pageNumber={pageNumber} scale={width > 786 ? 1.7 : 0.6} />
       </Document>
       <p>
