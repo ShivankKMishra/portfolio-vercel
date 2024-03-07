@@ -1,14 +1,15 @@
 import React from 'react';
 import './about.css';
 import image from "@/src/assets/images/image (3).jpeg";
+
 export default function About() {
   return (
     <div className="about text-center">
       <h1 className="font-extrabold text-3xl">About Me</h1>
 
-      <div className="flex flex-wrap justify-center mx-2 md:mx-20 my-10 px-4 md:px-40">
-        <div className="mb-4 md:mb-0">
-          <img className="h-36 mx-10 rounded-full" src={image} alt="Profile Picture" />
+      <div className="flex flex-col md:flex-row justify-center mx-2 md:mx-20 my-10 px-4 md:px-40">
+        <div className="mb-4 md:mb-0 md:mr-10">
+          <img className="h-36 mx-auto md:mx-0 rounded-full" src={image} alt="Profile Picture" />
         </div>
 
         <div className="flex flex-wrap m-2">
