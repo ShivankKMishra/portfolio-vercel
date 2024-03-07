@@ -1,18 +1,17 @@
 import React from 'react';
 import './about.css';
 import image from "@/src/assets/images/image (3).jpeg";
-
 export default function About() {
   return (
     <div className="about text-center">
       <h1 className="font-extrabold text-3xl">About Me</h1>
 
-      <div className="flex flex-col md:flex-row justify-center mx-2 md:mx-20 my-10 px-4 md:px-40">
-        <div className="mb-4 md:mb-0 md:mr-10 md:w-1/3">
-          <img className="h-auto md:h-36 mx-auto md:mx-0 rounded-full" src={image} alt="Profile Picture" />
+      <div className="flex flex-wrap justify-center mx-2 md:mx-20 my-10 px-4 md:px-40">
+        <div className="mb-4 md:mb-0">
+          <img className="h-36 mx-10 rounded-full" src={image} alt="Profile Picture" />
         </div>
 
-        <div className="flex flex-wrap m-2 md:w-2/3">
+        <div className="flex flex-wrap m-2">
           <div className="border flex flex-col items-center border-black rounded-3xl p-2 m-2">
             <h1 className="font-bold text-xl">Experience</h1>
             <h2>2+ years</h2>
@@ -26,7 +25,7 @@ export default function About() {
           </div>
         </div>
 
-        <div className="m-2 md:w-full">
+        <div className="m-2">
           <p>
             Hello! I'm <strong>Shivank Mishra</strong>, and I'm passionate about bringing ideas to life through programming. I've fallen in love with the world of coding and have acquired proficiency in classics like <strong>C++</strong> and <strong>Javascript</strong>. 🚀
           </p>
@@ -75,4 +74,4 @@ export default function About() {
       </div>
     </div>
   );
-}
+} 
