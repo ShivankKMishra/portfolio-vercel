@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import github from "@/src/assets/images/github-icon.png";
 import codeicon from "@/src/assets/images/icon-code-0.jpg";
 import image1 from '@/src/assets/images/cardsImage/keeperApp.png';
-import image2 from '@/src/assets/images/cardsImage/currencyConverter.png';
-import image3 from '@/src/assets/images/cardsImage/passwordGenrator.png';
+import image3 from '@/src/assets/images/cardsImage/currencyConverter.png';
+import image2 from '@/src/assets/images/cardsImage/passwordGenrator.png';
 
 function Projects() {
   const ProjectCard = ({ projectName, Linking, image, githubLink }) => (
