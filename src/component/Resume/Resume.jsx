@@ -28,16 +28,27 @@ export default function Resume() {
 
   function onError(error) {
     console.error('Error loading PDF:', error);
-     }
-   
+  }
+
+  function downloadPdf() {
+    const link = document.createElement('a');
+    link.href = '/Resume2.pdf'; // Change the path to your PDF file
+    link.download = 'Resume.pdf'; // Name of the downloaded file
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+
   return (
-    <div className='flex justify-center'>
-      <Document file="/Resume.pdf" onLoadSuccess={onDocumentLoadSuccess} onLoadError={onError}>
-        <Page pageNumber={pageNumber} scale={width > 786 ? 1.7 : 0.6} />
-      </Document>
-      <p>
-        
-      </p>
+    <div className='flex flex-col items-center'>
+      <div className='mb-4'>
+        <Document file="/Resume2.pdf" onLoadSuccess={onDocumentLoadSuccess} onLoadError={onError}>
+          <Page pageNumber={pageNumber} scale={width > 786 ? 1.7 : 0.6} />
+        </Document>
+      </div>
+      <button onClick={downloadPdf} className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'>
+        Download
+      </button>
     </div>
   );
 }
