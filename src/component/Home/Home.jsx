@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './home.css'; // Import the CSS file
 import image from "@/src/assets/images/profile-pic.png";
-
+import Scene from "./threejscomponent/Scene";
 function Home() {
   return (
     <>
@@ -24,7 +24,9 @@ function Home() {
             <div className='flex justify-center my-7 font-bold'>
               <button><Link to="https://github.com/ShivankKMishra"><img className='h-12' src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="GitHub" /></Link></button>
               <button><Link to="https://www.linkedin.com/in/shivank-mishra-0b6a74224/"><img className='h-12' src="https://cdn3.iconfinder.com/data/icons/glypho-social-and-other-logos/64/logo-linkedin-512.png" alt="LinkedIn" /></Link></button>
+              <Scene position={[-0.2, 0.3, -2]} style={{ width: '100%', position: 'absolute', zIndex: -1 }}  />
             </div>
+            
           </div>
         </div>
       </div>
