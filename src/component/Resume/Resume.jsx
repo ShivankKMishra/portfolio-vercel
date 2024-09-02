@@ -93,6 +93,17 @@ const Resume = () => {
           <li>SQL Certification from Cognitive Classes</li>
         </ul>
       </section>
+      
+      <section className="mt-6 text-center">
+        <h2 className="text-xl font-semibold text-darkcolor mb-4">Download Resume</h2>
+        <a 
+          href="/webdev.pdf" 
+          className="inline-block px-6 py-3 text-white bg-blue-600 rounded-lg shadow hover:bg-blue-700 transition duration-300 ease-in-out"
+          download
+        >
+          Download My Resume
+        </a>
+      </section>
     </div>
   );
 };
