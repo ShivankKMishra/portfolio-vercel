@@ -7,7 +7,7 @@ export default function Header() {
       <nav className="flex justify-between py-4 ">
         <div>
           <div className=' px-10 py-3'>
-            <Link to="/" className=""><img className="h-12" src={image} alt="Profile Picture" /></Link>
+            <Link to="/" className=""><img className="h-14 sm:h-14 md:h-16 lg:h-20 w-auto object-contain" src={image} alt="Profile Picture" /></Link>
           </div>
         </div>
 
